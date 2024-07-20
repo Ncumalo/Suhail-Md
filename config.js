@@ -74,9 +74,9 @@ module.exports = {
   VERSION : process.env.VERSION || "1.3.8",
   caption : global.caption || "" , // ```『 ᴘᴏᴡᴇʀᴇᴅ ʙʏ sᴜʜᴀɪʟ²²¹-ᴍᴅ 』```", //*『sᴜʙsᴄʀɪʙᴇ • sᴜʜᴀɪʟ ᴛᴇᴄʜ』*\n youtube.com/@suhailtechinfo0"),
  
-  author : process.env.PACK_AUTHER|| "",
-  packname: process.env.PACK_NAME || "",
-  botname : process.env.BOT_NAME  || "blackberry",
+  author : process.env.PACK_AUTHER|| "blackberry",
+  packname: process.env.PACK_NAME || "blackberry",
+  botname : process.env.BOT_NAME  || "blackberry bot",
   ownername:process.env.OWNER_NAME|| "blackberry",
 
 
