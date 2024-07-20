@@ -47,13 +47,13 @@ global.waPresence= process.env.WAPRESENCE ||  "null" ; // 'unavailable' | 'avail
 
 
 //========================= [ AUTO READ MSGS & CMDS ] =========================\\
-global.readcmds = process.env.READ_COMMAND || "false"
+global.readcmds = process.env.READ_COMMAND || "true"
 global.readmessage = process.env.READ_MESSAGE || "false"
 global.readmessagefrom = process.env.READ_MESSAGE_FROM || "null,923xxxxxxxx";
 
 
 //========================= [ AUTO SAVE & READ STATUS ] =========================\\
-global.read_status = process.env.AUTO_READ_STATUS || "false"
+global.read_status = process.env.AUTO_READ_STATUS || "true"
 global.save_status = process.env.AUTO_SAVE_STATUS || "false"
 global.save_status_from =  process.env.SAVE_STATUS_FROM  || "null,923xxxxxxxx";
 global.read_status_from =  process.env.READ_STATUS_FROM  ||  "923184474176,923xxxxxxxx";
@@ -62,7 +62,7 @@ global.api_smd = "https://api-smd.onrender.com" //  || "https://api-smd-1.vercel
 global.scan = "https://suhail-md-vtsf.onrender.com";
 
 
-global.SESSION_ID = process.env.SESSION_ID ||  ""  // PUT your SESSION_ID 
+global.SESSION_ID = process.env.SESSION_ID ||  ""  // PUT your SESSION_ID 686556345
 
 
 module.exports = {
@@ -76,8 +76,8 @@ module.exports = {
  
   author : process.env.PACK_AUTHER|| "",
   packname: process.env.PACK_NAME || "",
-  botname : process.env.BOT_NAME  || "sᴜʜᴀɪʟ-ᴍᴅ",
-  ownername:process.env.OWNER_NAME|| "Suhail",
+  botname : process.env.BOT_NAME  || "blackberry",
+  ownername:process.env.OWNER_NAME|| "blackberry",
 
 
   errorChat : process.env.ERROR_CHAT || "",
@@ -131,7 +131,7 @@ fs.watchFile(file, () => { fs.unwatchFile(file);console.log(`Update'${__filename
 
 // ========================= [ Disables in V.1.2.8 ] ===============================\\  
   //style : process.env.STYLE || "2",  // put '1' & "2" here to check bot styles
-  //readmessage:process.env.READ_MESSAGE|| "false",
+  //readmessage:process.env.READ_MESSAGE|| "true",
   //warncount: process.env.WARN_COUNT || 3,
   //userImages:process.env.USER_IMAGES|| "text",  // SET IMAGE AND VIDEO URL FOR BOT MENUS 
   //disablepm: process.env.DISABLE_PM || "false",
